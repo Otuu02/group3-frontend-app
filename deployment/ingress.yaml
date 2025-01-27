@@ -8,12 +8,12 @@ metadata:
 spec:
   tls:
     - hosts:
-        - bank.cloudwitches.online
-        - bankapi.cloudwitches.online
+        -bank.capgrp3banking.online 
+        -bankapi.capgrp3banking.online 
       secretName: bank-tls-secret
   ingressClassName: nginx
   rules:
-  - host: bank.cloudwitches.online
+  - host:bank.capgrp3banking.online 
     http:
       paths:
       - path: /
@@ -23,7 +23,7 @@ spec:
             name: bank-frontend-service
             port: 
               number: 3000
-  - host: bankapi.cloudwitches.online
+  - host:bankapi.capgrp3banking.online 
     http:
       paths:
       - path: /
