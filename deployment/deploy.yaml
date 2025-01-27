@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: frontend-banking-container
-        image: gtech2024/group3-frontend-app:5  # Replace this with your Docker image name
+        image: gtech2024/group3-frontend-app:6  # Replace this with your Docker image name
         ports:
         - containerPort: 3000 # Replace with your app's port if necessary
         env:
