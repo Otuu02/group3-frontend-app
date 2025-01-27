@@ -7,7 +7,7 @@ spec:
   issuerRef:
     name: letsencrypt-prod
     kind: ClusterIssuer
-  commonName: bank.capgrp3banking.online  
+  commonName: bank.capgrp3banking.online
   dnsNames:
-    -bank.capgrp3banking.online  
-    -bankapi.capgrp3banking.online 
+    - bank.capgrp3banking.online
+    - bankapi.capgrp3banking.online
