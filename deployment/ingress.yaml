@@ -4,32 +4,31 @@ metadata:
   name: bank-ingress
   labels:
     name: bank-ingress
-    
 spec:
   tls:
     - hosts:
-        -bank.capgrp3banking.online 
-        -bankapi.capgrp3banking.online 
+        - bank.capgrp3banking.online
+        - bankapi.capgrp3banking.online
       secretName: bank-tls-secret
   ingressClassName: nginx
   rules:
-  - host:bank.capgrp3banking.online 
-    http:
-      paths:
-      - path: /
-        pathType: Prefix
-        backend:
-          service:
-            name: bank-frontend-service
-            port: 
-              number: 3000
-  - host:bankapi.capgrp3banking.online 
-    http:
-      paths:
-      - path: /
-        pathType: Prefix
-        backend:
-          service:
-            name: bank-backend-service
-            port: 
-              number: 8080
+    - host: bank.capgrp3banking.online
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: bank-frontend-service
+                port:
+                  number: 3000
+    - host: bankapi.capgrp3banking.online
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: bank-backend-service
+                port:
+                  number: 8080
