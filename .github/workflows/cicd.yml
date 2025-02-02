@@ -1,5 +1,5 @@
 
-name: Bank Frontend App Pipeline
+name: Bank Frontend Pipeline
 
 on:
   push:
